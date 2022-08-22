@@ -1,0 +1,367 @@
+@import url('components.css');
+
+
+body{
+    background-image: url("../uploaded_picture/website_pic/background_pick_home_opacity_low.jpeg");
+}
+
+
+.delete-btn2{
+    width: 100%;
+    display: block;
+    margin-top: 0.5rem;
+    border-radius: .5rem;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    text-transform: capitalize; 
+    text-align: center;
+}
+/* ---------------------------- dashboard ------------------------------ */
+
+
+.dashboard .box_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.dashboard .box_container .box{
+    padding: 1.5rem;
+    text-align: center;
+    border: var(--border); 
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.dashboard .box_container .box h3{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: var(--black);
+
+}
+
+.dashboard .box_container .box p{
+    font-size: 2rem;
+    background-color: var(--light-bg);
+    color: var(--light-color);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border:var(--border);
+    border-radius: .5rem;
+    color: var(--black);
+}
+
+.dashboard .title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    background:var(--button);
+}
+
+
+/* ---------------------------- add products ------------------------------ */
+
+.add_products form{
+    max-width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.add_products form .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.add_products form .flex .box{
+    width: 49%;
+}
+
+.add_products form .box{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    border: var(--border);
+}
+
+
+.add_products form textarea{
+    height: 5rem;
+    resize: none;
+}
+
+
+.add_products .title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    background:var(--button);
+}
+
+/* ---------------------------- show products ------------------------------ */
+
+.show_products{
+    padding-top: 0;
+}
+
+
+.show_products .box_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.show_products .box_container .box{
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.show_products .box_container .price{
+    padding:1rem 0;
+    color:var(--button);
+    font-size: 2.5rem;
+}
+
+.show_products .box_container .box .add_products{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--headercolor);
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.show_products .box_container .box img{
+    height:300px;
+    margin-bottom: 1rem;
+}
+
+.show_products .box_container .box .name{
+    margin: .5rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.show_products .box_container .box .cat{
+    font-size: 1.8rem;
+    color: var(--button);
+}
+
+.show_products .box_container .details{
+    padding-top: 1rem ;
+    font-size: 1.5rem;
+    line-height: 1.5 ;
+    color: var(--black);
+}
+
+
+
+/* ---------------------------- update products ------------------------------ */
+
+.update_product form{
+    max-width: 50rem;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.update_product form img{
+    height: 25rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.update_product form .box{
+    width: 100%;
+    border: var(--border);
+    background-color: rgb(246, 213, 213);
+    border-radius: .5rem;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+
+
+/* ---------------------------- list ------------------------------ */
+
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'lato', sans-serif;
+}
+  
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+  
+
+.responsive-table li{
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+}
+
+.responsive-table .table-header {
+    background-color: rgb(243, 117, 67);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+
+
+.responsive-table .col-1{
+    flex-basis: 10%;
+}
+    
+.responsive-table .col-2 {
+    flex-basis: 40%;
+}
+
+.responsive-table .col {
+    flex-basis: 25%;
+}
+    
+.responsive-table .col-4 {
+    flex-basis: 25%;
+}
+
+.responsive-table .col-5 {
+    flex-basis: 25%;
+}
+    
+.responsive-table .col-6 {
+    flex-basis: 25%;
+}
+   
+
+.responsive-table .col-7 {
+    flex-basis: 25%;
+}
+
+.responsive-table .col-8 {
+    flex-basis: 25%;
+}
+
+.responsive-table .col-9 {
+    flex-basis: 25%;
+}
+   
+   
+/* ---------------------------- List user ------------------------------ */
+img{
+    height: 180px;
+}
+
+h2{
+    
+        font-size: 3.5rem;
+        font-weight: bolder;
+        color: var(--white);
+        background:var(--button);
+    
+    
+}
+
+@media (max-width:768px){
+
+    .add_products form .flex .inputBox{
+        width: 100%;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+
+    li{
+        display: block;
+    }
+      
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .col:before {
+        color: rgb(243, 117, 67);
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+
+
+}
+
+
+@media (max-width:450px){
+
+    .show_products .box_container{
+        grid-template-columns: 1fr;
+    }
+
+    .update_product form img{
+        height: auto;
+        width: 100%;
+    }
+
+    .placed_orders .box_container{
+        grid-template-columns: 1fr;
+     }
+  
+     .user_accounts .box_container{
+        grid-template-columns: 1fr;
+     }
+  
+     .messages .box_container{
+        grid-template-columns: 1fr;
+     }
+}
+
+
+
+
